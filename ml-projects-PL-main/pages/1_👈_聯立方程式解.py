@@ -8,9 +8,9 @@
 
 import streamlit as st
 
-# from sympy.solvers import solve
-# from sympy import symbols
-# from sympy.core import sympify
+from sympy.solvers import solve
+from sympy import symbols
+from sympy.core import sympify
 
 x, y, z = symbols('x y z')
 
