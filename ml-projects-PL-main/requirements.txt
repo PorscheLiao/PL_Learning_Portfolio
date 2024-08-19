@@ -5,3 +5,5 @@ pandas
 scikit-learn
 scikit-image
 streamlit_drawable_canvas
+math
+sympy
