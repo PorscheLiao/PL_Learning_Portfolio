@@ -17,7 +17,7 @@ st.set_page_config(
 # 模型載入
 # @st.cache_resource
 def load_model():
-    return keras.saving.load_model('emnist_cnn_model.keras')
+    return keras.saving.load_model('ml-projects-PL-main/emnist_cnn_model.keras')
 
 model = load_model()
 
