@@ -2,5 +2,5 @@ streamlit
 numpy
 pandas
 scikit-learn
+Pillow==9.0.1
 scikit_image
-math
