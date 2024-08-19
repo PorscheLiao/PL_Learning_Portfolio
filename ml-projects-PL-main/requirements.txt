@@ -1,4 +1,5 @@
-tensorflow-cpu
 streamlit
 numpy
+pandas
+scikit-learn
 scikit-image
