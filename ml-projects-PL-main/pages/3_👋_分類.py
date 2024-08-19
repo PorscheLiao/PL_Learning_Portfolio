@@ -5,8 +5,8 @@ import numpy as np
 import joblib
 
 # load model
-clf2 = joblib.load('penguins.joblib')
-scaler = joblib.load('scaler.joblib')
+clf2 = joblib.load('ml-projects-PL-main/penguins.joblib')
+scaler = joblib.load('ml-projects-PL-main/scaler.joblib')
 
 y_dict = {0:'Adelie', 1:'Chinstrap', 2:'Gentoo'}
 island_dict = {'Torgersen':0, 'Biscoe':1, 'Dream':2}
