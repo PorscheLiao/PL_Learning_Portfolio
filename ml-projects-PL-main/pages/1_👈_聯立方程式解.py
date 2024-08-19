@@ -7,9 +7,10 @@
 # https://docs.streamlit.io/en/stable/api.html#display-interactive-widgets
 
 import streamlit as st
-from sympy.solvers import solve
-from sympy import symbols
-from sympy.core import sympify
+import sympy
+# from sympy.solvers import solve
+# from sympy import symbols
+# from sympy.core import sympify
 
 x, y, z = symbols('x y z')
 
