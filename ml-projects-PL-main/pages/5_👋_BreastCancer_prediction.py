@@ -2,8 +2,8 @@ import streamlit as st
 import joblib
 
 # 載入模型與標準化轉換模型
-clf = joblib.load('br_model.joblib')
-scaler = joblib.load('br_scaler.joblib')
+clf = joblib.load('ml-projects-PL-main/br_model.joblib')
+scaler = joblib.load('ml-projects-PL-main/br_scaler.joblib')
 
 st.title('Breast Cancer預測')
 radius_mean = st.slider('radius (mean):', min_value=6.981, max_value=28.11, value=11.00)
