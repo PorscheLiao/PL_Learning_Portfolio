@@ -11,8 +11,8 @@ def get_image_html(page_name, file_name):
     data_url = base64.b64encode(contents).decode("utf-8")
     return f'<a href="{page_name}"><img src="data:image/png;base64,{data_url}" style="width:300px"></a>'
 
-data_url_2 = get_image_html("分類", "./iris.png")
-data_url_3 = get_image_html("迴歸", "./taxi.png")
+data_url_2 = get_image_html("分類", "ml-projects-PL-main/iris.png")
+data_url_3 = get_image_html("迴歸", "ml-projects-PL-main/taxi.png")
 
 st.set_page_config(
     page_title="我的學習歷程",
