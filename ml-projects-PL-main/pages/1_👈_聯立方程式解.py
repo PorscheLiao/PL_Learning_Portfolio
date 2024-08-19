@@ -7,7 +7,7 @@
 # https://docs.streamlit.io/en/stable/api.html#display-interactive-widgets
 
 import streamlit as st
-import sympy
+
 # from sympy.solvers import solve
 # from sympy import symbols
 # from sympy.core import sympify
