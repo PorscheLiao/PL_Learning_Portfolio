@@ -2,3 +2,5 @@ streamlit
 numpy
 pandas
 scikit-learn
+scikit_image
+math
