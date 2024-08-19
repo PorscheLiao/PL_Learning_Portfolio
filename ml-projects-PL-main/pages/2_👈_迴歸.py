@@ -5,8 +5,8 @@ import numpy as np
 import joblib
 
 # load model
-clf2 = joblib.load('tips.joblib')
-scaler = joblib.load('tips_scaler.joblib')
+clf2 = joblib.load('ml-projects-PL-main/tips.joblib')
+scaler = joblib.load('ml-projects-PL-main/tips_scaler.joblib')
 
 sex_dict = {'Female':0, 'Male':1}
 smoker_dict = {'No':0, 'Yes':1}
