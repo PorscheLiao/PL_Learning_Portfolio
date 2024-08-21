@@ -11,9 +11,18 @@ def get_image_html(page_name, file_name):
     data_url = base64.b64encode(contents).decode("utf-8")
     return f'<a href="{page_name}"><img src="data:image/png;base64,{data_url}" style="width:300px"></a>'
 
-data_url_2 = get_image_html("分類", "ml-projects-PL-main/iris.png")
+
+data_url_1 = get_image_html("聯立方程式解", "ml-projects-PL-main/equations.png")
+data_url_2 = get_image_html("分類", "ml-projects-PL-main/penguin.png")
 data_url_3 = get_image_html("迴歸", "ml-projects-PL-main/taxi.png")
-data_url_4 = get_image_html("辨識", "ml-projects-PL-main/mnist.png")
+data_url_4 = get_image_html("辨識", "ml-projects-PL-main/letter.png")
+data_url_5 = get_image_html("BreastCancer_prediction", "ml-projects-PL-main/BreastCancer.png")
+
+# data_url_1 = get_image_html("聯立方程式解", "./equations.png")
+# data_url_2 = get_image_html("分類", "./penguin.png")
+# data_url_3 = get_image_html("迴歸", "./taxi.png")
+# data_url_4 = get_image_html("辨識", "./letter.png")
+# data_url_5 = get_image_html("BreastCancer_prediction", "./BreastCancer.png")
 
 st.set_page_config(
     page_title="我的學習歷程",
@@ -40,11 +49,11 @@ with col1:
         - Chinstrap
         - Gentoo
         ''')
-    # st.image('iris.png')
+    # st.image('penguin.png')
     st.markdown(data_url_2, unsafe_allow_html=True)
 
 
-    st.markdown('### [(分類)BreastCancer_prediction](分類)')
+    st.markdown('### [(BreastCancer_prediction)BreastCancer_prediction](BreastCancer_prediction)')
     st.markdown('''
     ##### 特徵(X):
         - mean radius
@@ -81,17 +90,19 @@ with col1:
         - malignant
         - benign
         ''')
-
+    # st.image('BreastCancer.png')
+    st.markdown(data_url_5, unsafe_allow_html=True)
     
     st.markdown('### [(聯立方程式解)聯立方程式解](聯立方程式解)')
     st.markdown('''
     ##### 方程式1
           方程式2
     ##### 求解
-          x=?
-          y=?
+        x=?
+        y=?
         ''')
-    
+    # st.image('equations.png')
+    st.markdown(data_url_1, unsafe_allow_html=True)
 with col2:
     st.markdown('### [(迴歸)計程車小費預測](迴歸)')
     st.markdown('''
@@ -110,9 +121,10 @@ with col2:
 
     # url must be external url instead of local file
     # st.markdown(f"### [![辨識]({url})](辨識)")
-    st.markdown('### [(辨識)辨識手寫字母與阿拉伯數字](辨識)')
+    st.markdown('### [(辨識)辨識手寫字母](辨識)')
     st.markdown('''
-    ##### 辨識手寫字母與阿拉伯數字
+    ##### 辨識手寫字母
         ''')
+    # st.image('letter.png')
     st.markdown(data_url_4, unsafe_allow_html=True)
  
